@@ -1,0 +1,59 @@
+.container {
+  background-color: #d1411e;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero {
+  color: white;
+}
+
+.wrapper {
+  width: 300vw;
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease-in-out;
+}
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+  width: 100vw;
+}
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: 20rem;
+}
+.her {
+  width: 100vw;
+  display: inline;
+}
+.heroHeading {
+  margin: 0;
+  padding: 0;
+}
+.heroHeading {
+  margin: 0;
+  padding: 0;
+}
+
+.arrowContainer {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 50vh;
+  }
+}
