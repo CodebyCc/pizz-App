@@ -53,7 +53,7 @@ const Cart = () => {
               </div>
             </td>
             <td>
-              <span className={styles.name}>Chicen Pizza</span>
+              <span className={styles.name}>Chicken Pizza</span>
             </td>
             <td>
               <span className={styles.extras}>

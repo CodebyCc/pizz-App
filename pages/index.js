@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Pizzaman Chicken</title>
+        <title>PizzaIn Ghana</title>
         <meta name="description" content="Best Pizza Shop In Ghana" />
         <link rel="icon" href="/favicon.icon" />
       </Head>
