@@ -1,9 +1,11 @@
 .container {
-  background-color: #d1411e;
-  height: 100px;
+  /* background-color: #d1411e; */
+  background-color: #d1bf1e;
+  background-color: #222;
+
   padding: 0px 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -14,44 +16,70 @@
   display: flex;
   align-items: center;
 }
-.item:nth-child(2) {
+.item:nth-child(1) {
   flex: 3;
 }
 .item:nth-child(3) {
+  justify-content: flex-end;
+}
+.item:nth-child(4) {
   justify-content: flex-end;
 }
 .callbutton {
   background-color: white;
   border-radius: 50%;
   padding: 10px;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.home {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 .texts {
-  margin-left: 20px;
-  color: white;
+  margin-left: 5px;
+  color: #b7903c;
 }
 .text:first-child {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
 }
 
 .text:last-child {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 .list {
   padding: 0;
   display: flex;
+
   align-items: center;
   list-style: none;
-  color: white;
+  color: #b7903c;
+  cursor: pointer;
 }
+.none {
+  padding: 0;
+  display: flex;
 
+  align-items: center;
+  list-style: none;
+  color: #b7903c;
+  cursor: pointer;
+}
 .listItem {
   margin: 20px;
   font-weight: 500;
+}
+.listItem:hover {
+  color: white;
+  transition: all 0.5s;
 }
 
 .cart {
@@ -71,11 +99,44 @@
   font-weight: bold;
 }
 
+.menu {
+  display: none;
+}
 @media screen and (max-width: 720px) {
-  .item:nth-child(2) {
-    display: none;
+  .menu {
+    display: block;
+    fill: #b7903c;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem;
+    margin-left: 2rem;
   }
   .item:nth-child(1) {
     flex: 3;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 1rem;
+    height: 100vh;
+    width: 50%;
+    background-color: #222;
+    position: absolute;
+    padding: 20px;
+    /* border-radius: 1rem; */
+    right: -5rem;
+    top: 3.5rem;
+  }
+  .none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .item:nth-child(4) {
+    display: none;
   }
 }

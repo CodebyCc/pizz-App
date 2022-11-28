@@ -21,6 +21,7 @@ const Cart = () => {
                   src="/images/pizza.png"
                   layout="fill"
                   objectFit="contain"
+                  alt=""
                 />
               </div>
             </td>
